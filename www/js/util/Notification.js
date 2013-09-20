@@ -144,7 +144,7 @@ var Notification = function() {
                 $("#popup-bckgrnd").attr("class", "popup-hide");
                 $("#popup-bckgrnd>div>div:nth-child(2)").attr("class", "popup-hide");
                 $("#user-list").prop('selectedIndex', 0);
-                location.href = "#Success";
+                location.href = "#Not/" + app.list;
             },
             error: function(data) {
                 app.showAlert("Ajax Error");
@@ -161,7 +161,7 @@ var Notification = function() {
                 app.showAlert("success");
                 $("#popup-bckgrnd").attr("class", "popup-hide");
                 $("#popup-bckgrnd>div>div:nth-child(1)").attr("class", "popup-hide");
-                location.href = "#Success";
+                location.href = "#Not/" + app.list;
                 return "success";
             },
             error: function(data) {
@@ -180,7 +180,7 @@ var Notification = function() {
                 app.showAlert("success");
                 $("#popup-bckgrnd").attr("class", "popup-hide");
                 $("#popup-bckgrnd>div>div:nth-child(3)").attr("class", "popup-hide");
-                location.href = "#Success";
+                location.href = "#Not/" + app.list;
                 return "success";
             },
             error: function(data) {
