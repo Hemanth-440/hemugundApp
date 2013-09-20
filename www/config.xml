@@ -8,6 +8,24 @@
 
     <icon gap:platform="android" height="96" src="img/App_Display_Icon.png" width="96"/>
     <icon gap:platform="ios" height="144" src="img/App_Display_Icon.png" width="144"/>
+    <gap:splash gap:platform="ios" height="768" src="img/EBS_Mobility_big_logo.png" width="1024"/>
+    <gap:splash gap:platform="ios" height="1024" src="img/EBS_Mobility_big_logo.png" width="768"/>
+    <gap:splash gap:platform="ios" height="1536" src="img/EBS_Mobility_big_logo.png" width="2048"/>
+    <gap:splash gap:platform="ios" height="2048" src="img/EBS_Mobility_big_logo.png" width="1536"/>
+    <gap:splash gap:platform="ios" height="320" src="img/EBS_Mobility_big_logo.png" width="480"/>
+    <gap:splash gap:platform="ios" height="480" src="img/EBS_Mobility_big_logo.png" width="320"/>
+    <gap:splash gap:platform="ios" height="640" src="img/EBS_Mobility_big_logo.png" width="960"/>
+    <gap:splash gap:platform="ios" height="960" src="img/EBS_Mobility_big_logo.png" width="640"/>
+    <gap:splash gap:platform="android" height="480" src="img/EBS_Mobility_big_logo.png" width="800"/>
+    <gap:splash gap:platform="android" height="800" src="img/EBS_Mobility_big_logo.png" width="480"/>
+    <gap:splash gap:platform="android" height="200" src="img/EBS_Mobility_big_logo.png" width="320"/>
+    <gap:splash gap:platform="android" height="320" src="img/EBS_Mobility_big_logo.png" width="200"/>
+    <gap:splash gap:platform="android" height="320" src="img/EBS_Mobility_big_logo.png" width="480"/>
+    <gap:splash gap:platform="android" height="480" src="img/EBS_Mobility_big_logo.png" width="320"/>
+    <gap:splash gap:platform="android" height="720" src="img/EBS_Mobility_big_logo.png" width="1280"/>
+    <gap:splash gap:platform="android" height="1280" src="img/EBS_Mobility_big_logo.png" width="720"/>   
+    
+        
     <feature name="http://api.phonegap.com/1.0/device" />
     <preference name="permissions" value="none"/>
 
