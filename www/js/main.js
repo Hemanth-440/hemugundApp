@@ -117,7 +117,6 @@ var app = {
             this.loading();
             if (this.isOnline()) {
                 this.notify.getHeaders(this.hdrsURL, function(data) {
-                    alert(JSON.stringify(data.filter));
                     data.head = self.findMatch(self.list);
                     data.back = '#Home';
                     data.backText = 'Back';
