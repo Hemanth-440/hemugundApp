@@ -113,7 +113,7 @@ var app = {
             this.list = match[1];
             this.hdrsURL = self.URL + "Notifications/" + match[1] + "/1";
             if (this.list === "others")
-                this.hdrsURL = self.URL + "Detail/others/?notify=" + self.username;
+                this.hdrsURL = self.URL + "Detail/others";
             this.loading();
             if (this.isOnline()) {
                 this.notify.getHeaders(this.hdrsURL, this.username, function(data) {
