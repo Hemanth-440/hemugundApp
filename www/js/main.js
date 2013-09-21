@@ -55,7 +55,7 @@ var app = {
 
         match = hash.match(/^#Home/);
         if (match) {
-            this.notify.getNotificationsCount(this.URL + "Home", function(data) {
+            this.notify.getNotificationsCount(this.URL + "Home",this.username, function(data) {
                 data.result.head = "Notifications";
                 data.result.back = '#Logout';
                 data.result.backText = 'Logout';
@@ -116,7 +116,7 @@ var app = {
                 this.hdrsURL = self.URL + "Detail/others/?notify=" + self.username;
             this.loading();
             if (this.isOnline()) {
-                this.notify.getHeaders(this.hdrsURL, function(data) {
+                this.notify.getHeaders(this.hdrsURL, this.username, function(data) {
                     data.head = self.findMatch(self.list);
                     data.back = '#Home';
                     data.backText = 'Back';
@@ -136,7 +136,7 @@ var app = {
                     data.head = "Filter";
                     data.back = '#Not/' + self.list + '';
                     data.done = '#Done/' + self.list + '';
-                    data.backText = "Back";
+                    data.backText = "Default";
                     data.username = self.username;
                     self.homePage = new NotificationFilterView(data);
                 });
@@ -194,7 +194,7 @@ var app = {
                     data.head = "Filter";
                     data.back = '#Not/' + self.list + '';
                     data.done = '#Done/' + self.list + '';
-                    data.backText = "Back";
+                    data.backText = "Default";
                     data.username = self.username;
                     self.homePage = new NotificationFilterView(data);
                 });

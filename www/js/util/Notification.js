@@ -42,9 +42,10 @@ var Notification = function() {
             }
         });
     };
-    this.getHeaders = function(url, callback) {
+    this.getHeaders = function(url, user, callback) {
         this.ajax({
             url: url,
+            data: "notify={\"user\":\"" + user + "\"}",
             success: function(data) {
                 if (data.response === "SUCCESS") {
                     callback(data);
@@ -61,12 +62,12 @@ var Notification = function() {
     this.getFilterHeaders = function(url, checked, username, callback) {
         var data = {};
         if (app.list === "rqstns") {
-            data = "{\"type\":{\"pr\":" + ((checked[0] !== "") ? true : false) + ",\"ir\":" + ((checked[1] !== "") ? true : false) + "\"},\"status\":{\"ar\":" + ((checked[2] !== "") ? true : false) + ",\"fyi\":" + ((checked[3] !== "") ? true : false) + ",\"closed\":" + ((checked[4] !== "") ? true : false) + "},\"day\":" + checked[5] + "\",\"org\":\"" + checked[6] + ",\"user\":\"" + username + "\"}";
+            data = "{\"type\":{\"pr\":" + ((checked[0] !== "") ? true : false) + ",\"ir\":" + ((checked[1] !== "") ? true : false) + "},\"status\":{\"ar\":" + ((checked[2] !== "") ? true : false) + ",\"fyi\":" + ((checked[3] !== "") ? true : false) + ",\"closed\":" + ((checked[4] !== "") ? true : false) + "},\"day\":\"" + checked[5] + "\",\"org\":\"" + checked[6] + "\",\"user\":\"" + username + "\"}";
         }
         else if (app.list === "prchrd") {
             data = "{\"type\":{\"blanket\":" + ((checked[0] !== "") ? true : false) + ",\"planned\":" + ((checked[1] !== "") ? true : false) + ",\"standard\":" + ((checked[2] !== "") ? true : false) + ",\"contract\":" + ((checked[3] !== "") ? true : false) + "},\"status\":{\"ar\":" + ((checked[4] !== "") ? true : false) + ",\"fyi\":" + ((checked[5] !== "") ? true : false) + ",\"closed\":" + ((checked[6] !== "") ? true : false) + "},\"day\":\"" + checked[7] + "\",\"org\":\"" + checked[8] + "\",\"user\":\"" + username + "\"}";
         }
-        else if (app.list === "xpnsap" || app.list === "pblnvc") {
+        else {
             data = "{\"status\":{\"ar\":" + ((checked[0] !== "") ? true : false) + ",\"fyi\":" + ((checked[1] !== "") ? true : false) + ",\"closed\":" + ((checked[2] !== "") ? true : false) + "},\"day\":\"" + checked[3] + "\",\"org\":\"" + checked[4] + "\",\"user\":\"" + username + "\"}";
         }
         this.ajax({
@@ -84,9 +85,10 @@ var Notification = function() {
             }
         });
     };
-    this.getNotificationsCount = function(url, callback) {
+    this.getNotificationsCount = function(url, user, callback) {
         this.ajax({
             url: url,
+            data: "notify={\"user\":\"" + user + "\"}",
             success: function(data) {
                 if (data.response === "SUCCESS") {
                     callback(data);
