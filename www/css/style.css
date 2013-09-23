@@ -350,33 +350,33 @@ input[type="submit"]:active{
 #content-notify>div>ul>li:nth-child(1)>a>div{
     background-image: url('../img/approvals.png');    
 }
-/*#content-notify>div>ul>li:nth-child(1)>a>div:active{
+#content-notify>div>ul>li:nth-child(1)>a>div:active{
     background-image: url('../img/approvals_glow.jpg');
-}*/
+}
 #content-notify>div>ul>li:nth-child(2)>a>div{
     background-image: url('../img/expenses.png');    
 }
-/*#content-notify>div>ul>li:nth-child(2)>a>div:active{
+#content-notify>div>ul>li:nth-child(2)>a>div:active{
     background-image: url('../img/expenses_glow.jpg');
-}*/
+}
 #content-notify>div>ul>li:nth-child(3)>a>div{
     background-image: url('../img/settings.png');    
 }
-/*#content-notify>div>ul>li:nth-child(3)>a>div:active{
+#content-notify>div>ul>li:nth-child(3)>a>div:active{
     background-image: url('../img/settings_glow.jpg');  
-}*/
+}
 #content-notify>div>ul>li:nth-child(4)>a>div{
     background-image: url('../img/timesheet.png');    
 }
-/*#content-notify>div>ul>li:nth-child(4)>a>div:active{
+#content-notify>div>ul>li:nth-child(4)>a>div:active{
     background-image: url('../img/timesheet_glow.jpg');    
-}*/
+}
 #content-notify>div>ul>li:nth-child(5)>a>div{
     background-image: url('../img/Others_Icon.png');    
 }
-/*#content-notify>div>ul>li:nth-child(5)>a>div:active{
+#content-notify>div>ul>li:nth-child(5)>a>div:active{
     background-image: url('../img/timesheet_glow.jpg');    
-}*/
+}
 #content-notify>div>ul>li>a>div>div:nth-child(2){
     width: 120px;    
     font-family: 'Arial';
@@ -1225,36 +1225,36 @@ input[type="submit"]:active{
     background-repeat: no-repeat;
     background-size: 36px 36px;
 }
-/*#header-details>div:nth-child(3)>ul>li:nth-child(1):active{
+#header-details>div:nth-child(3)>ul>li:nth-child(1):active{
     background-image: url('../img/Talk-hi-64_glow.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 36px 36px;
-}*/
+}
 #header-details>div:nth-child(3)>ul>li:nth-child(2){
     background-image: url('../img/details_icon.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 36px 36px;
 }
-/*#header-details>div:nth-child(3)>ul>li:nth-child(2):active{
+#header-details>div:nth-child(3)>ul>li:nth-child(2):active{
     background-image: url('../img/details_icon_glow.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 36px 36px;
-}*/
+}
 #header-details>div:nth-child(3)>ul>li:nth-child(3){
     background-image: url('../img/History_Icon.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 36px 36px;
 }
-/*#header-details>div:nth-child(3)>ul>li:nth-child(3):active{
+#header-details>div:nth-child(3)>ul>li:nth-child(3):active{
     background-image: url('../img/History_Icon_glow.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 36px 36px;
-}*/
+}
 #header-details>div:nth-child(3)>div:nth-child(2){
     float: right;
     padding-right: 20px;
