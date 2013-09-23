@@ -351,31 +351,31 @@ input[type="submit"]:active{
     background-image: url('../img/approvals.png');    
 }
 #content-notify>div>ul>li:nth-child(1)>a>div:active{
-    background-image: url('../img/approvals_glow.jpg');
+    background-image: url('../img/approvals_glow.png');
 }
 #content-notify>div>ul>li:nth-child(2)>a>div{
     background-image: url('../img/expenses.png');    
 }
 #content-notify>div>ul>li:nth-child(2)>a>div:active{
-    background-image: url('../img/expenses_glow.jpg');
+    background-image: url('../img/expenses_glow.png');
 }
 #content-notify>div>ul>li:nth-child(3)>a>div{
     background-image: url('../img/settings.png');    
 }
 #content-notify>div>ul>li:nth-child(3)>a>div:active{
-    background-image: url('../img/settings_glow.jpg');  
+    background-image: url('../img/settings_glow.png');  
 }
 #content-notify>div>ul>li:nth-child(4)>a>div{
     background-image: url('../img/timesheet.png');    
 }
 #content-notify>div>ul>li:nth-child(4)>a>div:active{
-    background-image: url('../img/timesheet_glow.jpg');    
+    background-image: url('../img/timesheet_glow.png');    
 }
 #content-notify>div>ul>li:nth-child(5)>a>div{
     background-image: url('../img/Others_Icon.png');    
 }
 #content-notify>div>ul>li:nth-child(5)>a>div:active{
-    background-image: url('../img/timesheet_glow.jpg');    
+    background-image: url('../img/timesheet_glow.png');    
 }
 #content-notify>div>ul>li>a>div>div:nth-child(2){
     width: 120px;    
